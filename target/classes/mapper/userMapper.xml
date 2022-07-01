@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.my.app.dao.userMapper">
+
+	<insert id="insert" parameterType="UserDto">
+		insert into user (id, pwd, name, address, phone, birth, email, reg_date) 
+		values (#{id}, #{pwd}, #{name}, #{address}, #{phone}, #{birth}, #{email}, now())
+	</insert>
+	
+	<select id="count" resultType="int">
+		select count(*) from user
+	</select>
+	<select id="select" parameterType="String" resultType="UserDto">
+		select * from user where id = #{id} 
+	</select>
+	<select id="selectAll" resultType="UserDto">
+		select * from user order by reg_date DESC
+	</select>
+	
+	<update id="update" parameterType="UserDto">
+		update user set pwd = #{pwd}, address = #{address}, phone = #{phone}, email = #{email}, grade = #{grade} where id = #{id}
+	</update>
+	
+	<delete id="delete" parameterType="String">
+		delete from user where id = #{id}
+	</delete>
+	<delete id="deleteAll">
+		delete from user
+	</delete>
+</mapper>

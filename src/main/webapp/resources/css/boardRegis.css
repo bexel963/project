@@ -1,0 +1,38 @@
+.container{
+            margin: 50px auto;
+            width: 900px;
+            padding: 30px;
+        }
+		.category-title{
+			width: 100%;
+			height: 60px;
+			background: #f7f7f7;
+            border-bottom: 1px solid #eee;
+            padding-top: 7px;
+            margin-bottom: 20px;
+		}
+		.category-title .text{
+			width: 1170px;
+			font-size: 30px;
+			color: #555555;
+			margin: 0 auto;
+		}
+        .btn{
+            float: right;
+            border: 2px solid #ccc;
+            border-radius: 0.2em;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        .btn:hover{
+        	border: 2px solid #EE7B00;
+            color: #EE7B00;
+        }
+        .btn{
+            margin: 20px 1px 20px 0;
+        }
+        .after::after{
+			clear: both;
+			content: '';
+			display: block;
+		}

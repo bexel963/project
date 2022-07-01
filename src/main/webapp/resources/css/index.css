@@ -1,0 +1,32 @@
+html, body {
+            width: 100%;
+        }
+        .row{
+            width: 1900px;
+            margin: 0 auto;
+            margin-top: 80px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 453px;
+            color: black;
+            margin: 20px 10px;
+            overflow: hidden;
+        }
+        .card img{
+        	height: 350px;
+        	transition: transform 0.3s;
+        }
+        .card img:hover{
+            transform: scale(1.05);
+        }
+        .card-text{
+            height: 150px;
+        }
+        .card-body a{
+            width: 180px;
+        }
+        .card-body a:nth-of-type(1){
+            margin-right: 40px;
+        }

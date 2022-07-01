@@ -1,0 +1,167 @@
+*{
+            padding: 0;
+            margin: 0;
+        }
+        ul, li{
+            list-style: none;
+        }
+        button{
+            background-color: white;
+        }
+        .container{
+            width: 900px;
+            margin: 100px auto;
+            font-size: 12px;
+            font-family: '돋움',Dotum,Helvetica,'Apple SD Gothic Neo',sans-serif;
+        }
+        .board_title{
+            border-top: 2px solid #ccc;
+            color: #333333;
+            font-weight: bold;
+            padding: 20px 5px;
+        }
+        .board_title .title{
+            float: left;
+        }
+        .board_title .date{
+            float: right;
+        }
+        .board_title::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .board_info{
+            border-top: 2px solid #ccc;
+            padding: 10px 10px;
+            background-color: #eee;
+        }
+        .board_info ul{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .board_info ul li:nth-of-type(1){
+            margin-right: auto;
+            margin-left: 0;
+            font-weight: bold;
+        }
+        .board_info ul li{
+            margin-left: 30px;
+        }
+        .board_info ul span{
+            margin-left: 5px;
+            font-weight: bold;
+        }
+        .content{
+            padding: 30px 20px 5px 20px;
+            line-height: 30px;
+        }
+        .btn_box{
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+        .btn_box i{
+            margin-right: 10px;
+        }
+        .btn_box button{
+            margin: 0 10px;
+        }
+        .comment_title{
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        .comment_title i{
+        	margin-right: 10px;
+        	color: #EE7B00;
+        }
+        .comment_content{
+            background-color: #FFF9F2;
+            margin: 15px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .comment_content .writer{
+            padding: 10px 0;
+        }
+        .comment_content span:nth-of-type(1){
+            margin-right: 10px;
+        }
+        .comment_content .writer :nth-of-type(1){
+            font-weight: bold;
+        }
+        .comment_content .content{
+        	border-bottom: 1px solid white;
+            margin-bottom: 20px;
+        }
+        .comment_write{
+            display: flex;
+            margin-top: 10px;
+        }
+        .comment_write textarea{
+            flex-basis: 90%;
+        }
+        .comment_write button{
+            flex-basis: 10%;
+        }
+        button{
+            padding: 10px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .liked{
+            color: #EE7B00;
+            border: 2px solid #EE7B00;
+            border-radius: 0.2em;
+        }
+        .nomal{
+            color: #aaaaaa;
+            border: 2px solid #aaaaaa;
+            border-radius: 0.2em;
+        }
+        .check{
+            color: #EE7B00;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+        .btn_group{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .btn_group button{
+            border: 2px solid #ccc;
+            border-radius: 0.2em;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        .btn_group button:hover{
+            border: 2px solid #EE7B00;
+            color: #EE7B00;
+        }
+        textarea{
+            padding: 10px;
+        }
+		#cBtnBox{
+            width: 860px;
+            height: 30px;
+        }
+        #cBtnBox button{
+            float: right;
+            padding: 0px 5px;
+            cursor: pointer;
+            font-size: 12px;
+            color: #aaaaaa;
+            border: 1px solid #aaaaaa;
+            border-radius: 0.2em;
+        }
+        #cBtnBox button:hover{
+            border: 2px solid #EE7B00;
+            color: #EE7B00;
+        }
+        #amendBtn{
+        	margin-left: 5px;
+        }
+        #line{
+        	margin-top: 50px;
+        }
